@@ -379,7 +379,7 @@
       style="flex-direction: column; padding: 0"
     >
       <video
-        id="introVideo"
+        id="introVideo" autoplay muted loop playsinline
         playsinline
         preload="auto"
         autoplay
@@ -387,7 +387,7 @@
         loop
         controls
         style="width:80%; max-width:800px; height:auto; object-fit:cover; display:block; background: #000; margin-top:40px; margin:60px auto; objectif-fit:cover; border-radius:12px;"
-      ><source src="RPRplay.mp4"controls autoplay muted loop type="video/mp4" />
+      ><source src="RPRplay.mp4" type="video/mp4" />
         <!-- si pas de video fournie, l'élément reste vide -->
       </video>
       <button id="videoNext" class="btn hidden">Jouer</button>
@@ -1136,5 +1136,6 @@ restartBtn.addEventListener('click', ()=>{
     </script>
 
   <!-- Code injected
+
 
 
